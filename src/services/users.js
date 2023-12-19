@@ -13,7 +13,7 @@ export const getUserEmail = async (email) => {
 
 export const registerUser = async (user) => {
     try {
-        user.password = createHash(user.password)
+        //user.password = createHash(user.password)
         return await UserModel.create({ ...user })
     } catch (error) {
         console.log('Error en registerUser: ', error)
