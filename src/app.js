@@ -6,7 +6,7 @@ import __dirname from './utils.js'
 import session from 'express-session'
 import MongoStore from 'connect-mongo'
 import passport from 'passport'
-import 'dotEnv/config'
+import 'dotenv/config'
 
 import ProductsRouter from './routers/products.js'
 import CartRouter from './routers/cart.js'
